@@ -7,6 +7,11 @@
     "cy:debug":"cypress open",
     "cy:debug:win":"./node_modules/.bin/cypress open",
     "cy:run":"cypress run",
+    
+    "build":"tsc",
+    "runjs":"node build/indexpluto.js",
+    "execute":"npm run build && npm run runjs",
+
     "cy:run:win":"./node_modules/.bin/cypress run"
   
   },
