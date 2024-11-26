@@ -5,4 +5,4 @@ let carName:string = "Range Rover";
 let NamesOfCar:string[] = ["Ford","BMW","Mercedes","Audi"];
 
 
-console.log("I will buy a" + NamesOfCar[2] );
+console.log("I will buy a " +carName[2]);
