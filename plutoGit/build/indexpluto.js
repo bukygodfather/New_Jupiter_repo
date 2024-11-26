@@ -1,18 +1,25 @@
 "use strict";
-//Comparison Operators
-/*
-
-Equals to =
-Not Equals to
-Greater than or equal to >=
-And so on ...
-*/
-//This is a conditional statment
-const num1 = 45;
-const num2 = 55;
-if (num1 > num2) {
-    console.log("Greater Evaluation");
+//Functions is a way of writting a group of codes for just one particular/specific job
+/*3 types of functions
+the type that doesnt take argument, the second type takes argument*/
+/*This first type doesnt take or return's any argument*/
+function greet() {
+    console.log("Good morning");
+    console.log("Good morning");
+    console.log("Good morning");
 }
-if (num1 < num2) {
-    console.log("lesser Evaluation");
+greet();
+/*This second type takes but doesnt return any argument*/
+function goodbye(name) {
+    console.log(`Good morning! ${name}`);
+    console.log("Good morning");
+    console.log("Good morning");
 }
+goodbye("Chris");
+/*This third type takes and returns  argument*/
+function shout(name) {
+    const arg = `Good bye! ${name}`;
+    console.log(arg);
+    return arg;
+}
+shout("Jaga");
