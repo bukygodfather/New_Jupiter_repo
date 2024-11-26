@@ -1,5 +1,18 @@
 "use strict";
-console.log("Hello world");
-let carName = "Range Rover";
-let NamesOfCar = ["Ford", "BMW", "Mercedes", "Audi"];
-console.log("I will buy a " + NamesOfCar[2]);
+//Comparison Operators
+/*
+
+Equals to =
+Not Equals to
+Greater than or equal to >=
+And so on ...
+*/
+//This is a conditional statment
+const num1 = 45;
+const num2 = 55;
+if (num1 > num2) {
+    console.log("Greater Evaluation");
+}
+if (num1 < num2) {
+    console.log("lesser Evaluation");
+}
