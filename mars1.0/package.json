@@ -1,0 +1,19 @@
+{
+  "name": "mars1.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:debug": "cypress open",
+    "cy:debug:win": "./node_modules/.bin/cypress open",
+    "cy:run": "cypress run",
+    "cy:run:win": "./node_modules/.bin/cypress run"
+  },
+  "keywords": [],
+  "author": "Ebuka Frank",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.16.0",
+    "typescript": "^5.7.2"
+  }
+}
