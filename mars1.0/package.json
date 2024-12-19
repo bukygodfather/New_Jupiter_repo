@@ -6,7 +6,7 @@
   "scripts": {
     "cy:debug": "cypress open",
     "cy:debug:win": "./node_modules/.bin/cypress open",
-    "cy:run": "cypress run",
+    "cy:run": "cypress run --browser chrome --spec 'cypress/e2e/Practice/*.cy.ts'",
     "cy:run:win": "./node_modules/.bin/cypress run"
   },
   "keywords": [],
