@@ -1,11 +1,7 @@
 
-describe('Type in Username bar', () => {
-    beforeEach(() => {
+describe('Login CENIDEA', () => {
   
-      cy.visit('https://thinking-tester-contact-list.herokuapp.com/')
-    })
-  
-    it('get and click on search button', () => {
+    it('login with valid ID', () => {
       
       cy.get('input[id="email"]').type("standard_user");
       cy.get('input[id="password"]').type("secret_sauce");
