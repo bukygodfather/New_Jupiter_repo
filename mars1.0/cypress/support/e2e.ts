@@ -1,12 +1,15 @@
 
-describe('Type in Username bar', () => {
-    before(() => {
+import './commands'
+
+
+    beforeEach(() => {
   
-      cy.visit('/')
+     cy.visit("/");
+     cy.clearAllCookies();
     })
 
   
 
 
-  })
+  
   

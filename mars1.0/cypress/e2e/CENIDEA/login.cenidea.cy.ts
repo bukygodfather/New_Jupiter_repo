@@ -1,10 +1,13 @@
 
-describe('Type in Username bar', () => {
+describe("Login", () => {
 
   
-    it('displays two todo items by default', () => {
-      
-      cy.get('button[class*="navbar-toggler"]').click();
+    it("Login", () => {
+      cy.visit("https://www.cenidea.co.uk/login");
+      cy.get('input[id="email_field"]').type("ebukafrank@gmail.com");
+      cy.get('input[id="password_field"]').type("#rHYK0i9NpJTUizP");
+      cy.get('button[id="login_button"]').click();      
+
   
       
       })

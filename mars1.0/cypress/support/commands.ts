@@ -1,11 +1,25 @@
 /// <reference types="cypress" />
 
-//declare global {
-  // namespace Cypress {
-    // interface Chainable {
-      // login(email: string, password: string): Chainable<void>
-       //drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
-       
-  //   }
-   //}
- //}
+declare namespace Cypress {
+
+  interface Chainable{
+      loginWith(): Chainable<void>
+
+  }
+   
+   }
+
+
+   Cypress.Commands.add("loginWith",()=>{
+  
+    cy.url().should("include", "cenidea");
+    cy.title().should("include", "Consultancy");
+    cy.wait(5000)
+    cy.get('button[id="rcc-confirm-button"]').should('exist').click({force:true});      
+
+
+   
+  }
+    
+  
+  )
