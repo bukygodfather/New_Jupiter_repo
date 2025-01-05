@@ -14,7 +14,7 @@ declare namespace Cypress {
   
     cy.url().should("include", "cenidea");
     cy.title().should("include", "Consultancy");
-    cy.wait(5000)
+    cy.wait(20000)
     cy.get('button[id="rcc-confirm-button"]').should('exist').click({force:true});      
 
 

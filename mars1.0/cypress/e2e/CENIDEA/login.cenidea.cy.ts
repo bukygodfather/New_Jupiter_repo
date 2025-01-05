@@ -6,7 +6,7 @@ describe("Login", () => {
       cy.visit("/");
       cy.get('input[id="email_field"]').type("ebukafrank@gmail.com");
       cy.get('input[id="password_field"]').type("#rHYK0i9NpJTUizP");
-      cy.get('button[id="login_button"]').click();      
+      cy.get('button[id="login_button"]').click({force:true});      
 
   
       

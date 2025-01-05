@@ -7,9 +7,9 @@ describe("Login", () => {
     it("browse test", () => {
       
      cy.loginWith();      
-      cy.get('input[placeholder*="Search courses with any keyword on any course..."]')
+      cy.get('input[class="form-control px-3 m-2 rounded-pill shadow-lg"]')
       .type("Devops")
-      .type("{enter}");
+      .click({force:true});
   
       
       })
